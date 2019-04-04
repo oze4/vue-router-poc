@@ -57,6 +57,11 @@ export default {
             title: "Admin",
             icon: "gavel",
             route: "admin"
+          },
+          {
+            title: "About",
+            icon: "about",
+            route: "about"
           }
         ]
       }
