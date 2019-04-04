@@ -60,8 +60,8 @@ export default {
           },
           {
             title: "About",
-            icon: "about",
-            route: "info"
+            icon: "info",
+            route: "about"
           }
         ]
       }
