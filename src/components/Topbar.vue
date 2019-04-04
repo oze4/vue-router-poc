@@ -50,7 +50,7 @@ export default {
           },
           {
             title: "Account",
-            icon: "dns",
+            icon: "account_circle",
             route: "account"
           },
           {
@@ -61,7 +61,7 @@ export default {
           {
             title: "About",
             icon: "about",
-            route: "about"
+            route: "info"
           }
         ]
       }
