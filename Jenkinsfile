@@ -6,7 +6,7 @@ node {
     }
 
     stage('Build image') {
-        app = docker.build("oze4/vue-router-poc:latest")
+        app = docker.build("oze4/vue-router-poc")
     }
 
     stage('Test image') {
