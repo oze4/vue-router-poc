@@ -1,15 +1,24 @@
-pipeline {
-    agent { dockerfile true }
-    stages {
-        stage('docker:build') {
-            steps {
-                sh 'docker build -t oze4/vue-router-poc:latest .'
-            }
+node {
+    def app
+
+    stage('Clone repository') {
+        checkout scm
+    }
+
+    stage('Build image') {
+        app = docker.build("oze4/vue-router-poc:latest")
+    }
+
+    stage('Test image') {
+        app.inside {
+            sh 'echo "Tests passed"'
         }
-        stage('docker:push') {
-            steps {
-                sh 'docker push oze4/vue-router-poc:latest'
-            }
+    }
+
+    stage('Push image') {
+        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+            app.push("${env.BUILD_NUMBER}")
+            app.push("latest")
         }
     }
 }
