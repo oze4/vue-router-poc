@@ -24,7 +24,7 @@ node {
 
     stage ('Deploy') {
         sshagent(credentials : ['ost-sf-dckr-00']) {
-            sh 'ssh -v root@ost-sf-dckr-00 "docker pull oze4/vue-router-poc:latest"'
+            sh 'ssh -v root@ost-sf-dckr-00 "docker pull oze4/vue-router-poc:latest; docker stop vue-router-poc; docker rm vue-router-poc; docker run -d --name vue-router-poc --expose 80 --net nginx-proxy -e VIRTUAL_HOST=vrpoc.ostrike.com oze4/vue-router-poc:latest"'
         }
     }
 }
