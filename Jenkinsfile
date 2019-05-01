@@ -24,7 +24,7 @@ node {
 
     stage ('Deploy') {
         sshagent(credentials : ['ost-sf-dckr-00']) {
-            sh 'ssh -v root@ost-sf-dckr-00 "hostname"; "docker pull oze4/vue-router-poc:latest"'
+            sh 'ssh -v root@ost-sf-dckr-00 "docker pull oze4/vue-router-poc:latest"'
         }
     }
 }
