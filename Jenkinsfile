@@ -24,7 +24,7 @@ node {
 
     stage ('Deploy') {
         sshagent(credentials : ['ost-sf-dckr-00']) {
-            sh 'ssh -v root@ost-sf-dckr-00'
+            sh 'ssh -v root@ost-sf-dckr-00 "hostname"'
             sh 'hostname'
         }
     }
