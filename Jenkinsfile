@@ -23,7 +23,7 @@ node {
     }
 
     stage ('Deploy') {
-        sshagent(credentials : ['docker-ostrike']) {
+        sshagent(credentials : ['ost-sf-dckr-00']) {
             sh 'ssh -v root@ost-sf-dckr-00'
             sh 'hostname'
         }
