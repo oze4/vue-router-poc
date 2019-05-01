@@ -22,7 +22,7 @@ node {
         }
     }
 
-    stage ('Deploy') {
+    stage ('SSH To Docker Host and Deploy') {
         sshagent(credentials : ['ost-sf-dckr-00']) {
             sh '''
 ssh -v root@ost-sf-dckr-00 <<EOF
