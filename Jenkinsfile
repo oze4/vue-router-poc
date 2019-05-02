@@ -44,7 +44,7 @@ echo "--------------------------------"
 echo "--------------------------------"
 echo "------ starting new image ------"
 echo "--------------------------------"
-docker run -d --name vue-router-poc --expose 80 --net nginx-proxy -e VIRTUAL_HOST=vrpoc.ostrike.com oze4/vue-router-poc:latest
+docker run -d --name vue-router-poc --expose 80 443 --net nginx-proxy -e VIRTUAL_HOST=vrpoc.ostrike.com oze4/vue-router-poc:latest
 echo "--------------------------------"
 echo "--------------------------------"
 echo "----------- DONE ---------------"
