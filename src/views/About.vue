@@ -1,9 +1,5 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <h1>This was added to test Jenkins</h1>
-    <h1>So was this!</h1>
-    <h1>ahah! I think I fixed it!</h1>
-    <h1>Added these 2 to finalize tests!</h1>
+    <h1>Hi Kathy, Hi Mark</h1>
   </div>
 </template>
