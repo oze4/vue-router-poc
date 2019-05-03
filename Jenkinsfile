@@ -44,7 +44,7 @@ echo "--------------------------------"
 echo "--------------------------------"
 echo "------ starting new image ------"
 echo "--------------------------------"
-cd /srv/nginx-proxy/
+cd "/srv/nginx-proxy/""
 docker-compose up -d vue-router-poc
 echo "--------------------------------"
 echo "--------------------------------"
