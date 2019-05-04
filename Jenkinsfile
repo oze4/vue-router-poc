@@ -16,7 +16,6 @@ node {
     }
 
     stage('Push Image To Docker Hub') {
-        echo "envBuildNumber: oze4/vue-router-poc:${env.BUILD_NUMBER}"
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
