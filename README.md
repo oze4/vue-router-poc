@@ -1,4 +1,4 @@
-# [vue-router-poc](vrpoc.ostrike.com)
+# [vue-router-poc](https://vrpoc.ostrike.com)
 
 [![Build Status](https://jenkins.ostrike.com/buildStatus/icon?job=1-vue-router-poc&job=2-vue-router-poc)](https://jenkins.io/)
 
