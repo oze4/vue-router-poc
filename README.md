@@ -1,11 +1,6 @@
 # [vue-router-poc](https://vrpoc.ostrike.com)
 
 
-[![Build Status](https://jenkins.ostrike.com/buildStatus/icon?job=1-vue-router-poc&style=flat-square&subject=step%20one)](https://jenkins.io/)
-
-
-[![Build Status](https://jenkins.ostrike.com/buildStatus/icon?job=2-vue-router-poc&style=flat-square&subject=step%20two)](https://jenkins.io)
-
 ## Project setup
 ```
 npm install
